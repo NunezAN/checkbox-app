@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import CheckBoxRow from "./CheckBoxRow";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full bg-black h-screen">
+      <div className="mx-auto w-fit p-4 grid grid-rows-4">
+        
+        <CheckBoxRow label={"t1"} />
+        <CheckBoxRow label={"t2"} />
+        <CheckBoxRow label={"t3"} />
+        <CheckBoxRow label={"t4"} />
+      </div>
     </div>
   );
 }
