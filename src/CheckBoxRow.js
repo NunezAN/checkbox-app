@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 
-export default function CheckBoxRow({ label }) {
-  const [permissions, setPermissions] = useState({
-    read: true,
-    write: true,
-    delete: true,
-  });
+export default function CheckBoxRow({ label, permissions, setPermissions }) {
   return (
     <div className="text-white flex gap-4">
       <span className="p-2 text-2xl uppercase">{label}</span>
